@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card row">
+    <app-disease-card *ngFor="let disease of diseases;let i=index" [ngClass]="{'slideOutLeft': i==count}" class="animated"
+      [disease]="disease">
+    </app-disease-card>
+    <app-disease-card [disease]="info" [isInfo]="true" *ngIf="info"></app-disease-card>
+  </div>
+  <div class="navigation">
+    <span class="float-left" (click)="remove()" *ngIf="!info && count>1">
+      <i class="far fa-arrow-alt-circle-left"></i>
+      Skip
+    </span>
+    <span class="float-right" (click)="showInfo()" *ngIf="!info">
+      More Info
+      <i class="far fa-arrow-alt-circle-right"></i>
+    </span>
+    <ng-container *ngIf="info">
+      <span class="float-left" (click)="back()">
+        <i class="far fa-arrow-alt-circle-left"></i>
+        Back
+      </span>
+    </ng-container>
+  </div>
+</div>

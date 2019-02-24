@@ -1,0 +1,7 @@
+.outer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #f5f7fa;
+  overflow: hidden;
+}

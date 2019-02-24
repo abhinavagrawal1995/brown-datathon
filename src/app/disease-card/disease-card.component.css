@@ -1,0 +1,55 @@
+.outer {
+  width: 98%;
+  position: absolute;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overflow: -moz-scrollbars-none;
+  background: white;
+  height: 545px;
+  margin: auto;
+  -ms-overflow-style: none;
+}
+
+.outer::-webkit-scrollbar {
+  width: 0 !important
+}
+
+.profile {
+  height: 400px;
+  background-size: cover;
+}
+
+.info {
+  padding: 0 30px;
+  color: #9b9b9b;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+}
+
+.name,
+.probability {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 800;
+  color: black;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+.probability {
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px 5px;
+  margin-top: -8px;
+}
+
+.details {
+  white-space: pre-wrap;
+}

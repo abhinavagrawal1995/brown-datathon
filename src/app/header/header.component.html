@@ -1,0 +1,16 @@
+<div class="outer container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <img src="assets/logo.png" alt="Logo" class="img-responsive logo float-left">
+      <span class="float-left text" (click)="toggle(false)" [ngClass]="{'current':!navService.isProfile}">
+        Matches
+      </span>
+      <span class="float-left text" (click)="toggle(true)" [ngClass]="{'current':navService.isProfile}">
+        Profile
+      </span>
+      <span class="float-right text logo-text">
+        Tinder
+      </span>
+    </div>
+  </div>
+</div>

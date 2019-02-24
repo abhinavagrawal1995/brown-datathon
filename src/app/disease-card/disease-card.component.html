@@ -1,0 +1,53 @@
+<div class="outer container" *ngIf="!isInfo">
+  <div class="row profile" [ngStyle]="{ 'background-image': 'url(' + disease.img + ')'}"></div>
+  <div class="row">
+    <div class="container info">
+      <div class="row">
+        <span class="name">
+          {{disease.name}}
+        </span>
+        <span class="probability" *ngIf="probability">
+          {{disease.probability}}%
+        </span>
+      </div>
+      <div class="row">
+        <span class="description">
+          {{disease.description}}
+        </span>
+      </div>
+      <hr>
+      <div class="row">
+        Do's
+      </div>
+      <div class="row">
+        <ul>
+          <li *ngFor="let do of disease.dos">{{do}}</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="row">
+        Dont's
+      </div>
+      <div class="row">
+        <ul>
+          <li *ngFor="let dont of disease.donts">{{dont}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="outer container" *ngIf="isInfo">
+<br>
+  <div class="container info">
+    <div class="row">
+      <span class="name">
+        {{disease.name}}
+      </span>
+    </div>
+    <br>
+    <div class="row details">
+      {{disease.info}}
+    </div>
+  </div>
+</div>

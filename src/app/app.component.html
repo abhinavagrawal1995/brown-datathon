@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="outer">
+
+  <app-header></app-header>
+  <app-disease-carousel [diseases]="diseases" *ngIf="!navService.isProfile"></app-disease-carousel>
+  <app-user-profile *ngIf="navService.isProfile"></app-user-profile>
+</div>
