@@ -18,4 +18,8 @@ export class DiseaseCardComponent implements OnInit {
   ngOnInit() {
   }
 
+  sendData() {
+
+  }
+
 }

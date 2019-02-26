@@ -1,0 +1,54 @@
+<div class="outer container">
+  <h2>Please enter the following details:</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input  [(ngModel)]="userData.name" type="text" class="form-control" name="name" placeholder="John Doe">
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <select [(ngModel)]="userData.gender"  class="form-control" name="gender">
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+        <option value="9">Non-Binary</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <select [(ngModel)]="userData.age"  class="form-control" name="age">
+        <option value="1"> 18 to 24</option>
+        <option value="2"> 25 to 29</option>
+        <option value="3"> 30 to 34</option>
+        <option value="4"> 35 to 39</option>
+        <option value="5"> 40 to 44</option>
+        <option value="6"> 45 to 49</option>
+        <option value="7"> 50 to 54</option>
+        <option value="8"> 55 to 59</option>
+        <option value="9"> 60 to 64</option>
+        <option value="10"> 65 to 69</option>
+        <option value="11"> 70 to 74</option>
+        <option value="12"> 75 to 79</option>
+        <option value="13"> 80 or older</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="height">Height (in metres)</label>
+      <input  [(ngModel)]="userData.height" type="number" class="form-control" name="height">
+    </div>
+    <div class="form-group">
+      <label for="weight">Weight (in kilograms)</label>
+      <input  [(ngModel)]="userData.weight" type="number" class="form-control" name="weight">
+    </div>
+    <div class="form-group">
+      <label for="activity">Physical Activity Level</label>
+      <select [(ngModel)]="userData.activity"  class="form-control" name="activity">
+        <option value="1">Highly Active</option>
+        <option value="2">Active</option>
+        <option value="3">Insufficiently Active</option>
+        <option value="4">Inactive</option>
+        <option value="9">Don’t know/Not Sure/Refused/Missing</option>
+      </select>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="sendData()">Submit</button>
+  </form>
+</div>

@@ -7,6 +7,8 @@ import { DiseaseCardComponent } from './disease-card/disease-card.component';
 import { DiseaseCarouselComponent } from './disease-carousel/disease-carousel.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { NavigationService } from './services/navigation.service';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { NavigationService } from './services/navigation.service';
     UserProfileComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule, HttpClientModule
+
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]

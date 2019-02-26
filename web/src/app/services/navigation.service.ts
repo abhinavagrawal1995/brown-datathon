@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class NavigationService {
 
-  isProfile = true;
+  isProfile = false;
 
   constructor() { }
 }

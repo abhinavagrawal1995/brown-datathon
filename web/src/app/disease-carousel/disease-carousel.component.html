@@ -1,8 +1,10 @@
 <div class="container">
   <div class="card row">
-    <app-disease-card *ngFor="let disease of diseases;let i=index" [ngClass]="{'slideOutLeft': i==count}" class="animated"
-      [disease]="disease">
-    </app-disease-card>
+    <ng-container *ngFor="let disease of diseases;let i=index" >
+      <app-disease-card [ngClass]="{'slideOutLeft': i==count}" class="animated"
+        [disease]="disease" *ngIf="display(i)">
+      </app-disease-card>
+    </ng-container>
     <app-disease-card [disease]="info" [isInfo]="true" *ngIf="info"></app-disease-card>
   </div>
   <div class="navigation">

@@ -40,6 +40,10 @@ export class DiseaseCarouselComponent implements OnInit {
     this.info = null;
   }
 
+  display(i) {
+    return i < this.count + 1;
+  }
+
   get diseases(): Array<Disease> {
     return this._diseases;
   }
